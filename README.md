@@ -6,6 +6,7 @@ Docker cleaner is a simple go command line program that find all exited containe
 * -days : number of days to wait (since exited date) before removing container. Default is 7.
 * -clean-images : true will clean all unused images. Default is true.
 * -frequency-seconds : the amount of second between every clean. Default is 3600 (one hour) and zero or negative number means only once.
+* -filters : a set of text filter applied on image repoTags to exclude them from removal. Multiple filters can be specified using # to separate them. For example: alpine#mongo:3, define two filter: alpine and mongo:3.
 
 # Run in a docker container
 This tools is available as a docker images. It needs to have access to docker socket.
