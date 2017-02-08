@@ -1,0 +1,5 @@
+FROM hypriot/rpi-alpine-scratch:v3.4
+
+COPY docker-cleaner /bin/docker-cleaner
+
+CMD /bin/docker-cleaner
